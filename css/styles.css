@@ -1,0 +1,299 @@
+/* ===== MY CSS ===== */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    color: #39464d;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.875rem;
+    text-decoration: none;
+}
+
+p {
+    font-size: 0.875rem;
+    line-height: 1.75;
+    margin: 0 0 1.5rem 0;
+}
+
+.page {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.masthead {
+    display: block;
+    text-align: center;
+    padding: 1.875rem 0 1.25rem 0;
+    /* border-bottom: 1px solid #4d4d4d; */
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    padding: 0 0 0.75rem 0;
+}
+
+.name {
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 0 1rem 0;
+    margin: 0 auto;
+    width: 100%;
+    letter-spacing: .02rem;
+    text-align: center;
+}
+
+.name a:hover {
+    color: #39464d;
+}
+
+.navmain {
+    list-style-type: none;
+    margin: 0
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+}
+
+.navmain a {
+    text-decoration: none;
+    color: #39464d;
+    display: block;
+    padding: 1rem;
+}
+
+.navmain a:hover {
+    color: #01d1ff;
+}
+
+.navmain li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.navmain li:first-child {
+    margin-left: 0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:after {
+    content: "\25BC";
+    font-size: 0.5rem;
+    display: block;
+    position: absolute;
+    top: 44%;
+    right: 1%;
+    text-align: center;
+}
+
+.dropnav {
+    position: absolute;
+    display: none;
+    background: #01d1ff;
+    color: #fff;
+    text-align: center;
+}
+
+.dropnav li {
+    border-bottom: 1 px solid #fff;
+    color: #fff;
+    margin: auto;
+}
+
+.dropdown:hover > .dropnav {
+    display: block;
+    color: #fff;
+}
+
+.dropnav a {
+    color: #fff;
+}
+
+.dropnav a:hover {
+    color: #39464d;
+}
+
+a {
+    text-decoration: none;
+    color: #39464d;
+}
+
+a:hover {
+    color: #01d1ff;
+}
+
+.navmain .currentpage {
+    color: #01d1ff
+}
+
+.navmain .currentpage:hover {
+    color: #01d1ff;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+@media all and (max-width: 800px) {
+.navmain {
+    justify-content: space-around;
+}
+
+.footer {
+    justify-content: space-around; 
+}
+}
+
+@media all and (max-width: 600px) {
+.navmain {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+    text-align: center;
+  }
+    
+.navmain li {
+    display: inline-block;
+    margin-left: 0;
+}
+.thumbnail {
+    text-align: center;
+    margin: 0.25rem 0 0.25rem 0;
+    }
+    
+.footer {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 1rem; 
+    text-align: center;
+    }
+    
+.navmain a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+.navmain li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+/* ----- end MEDIA QUERIES ----- */
+
+.indexmain {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.imagemain {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 3.875rem 0 0 0;
+}
+
+.footer {
+    list-style-type: none;
+    margin: 0
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+    
+    border-top: 1px solid #4d4d4d;
+    width: 100%;
+    margin-top: 3.75rem;
+    margin-bottom: 1rem;
+    padding: 1.875rem 0 1.875rem 0;
+}
+
+
+
+/* ===== ABOUT PAGE ===== */
+
+.aboutmain {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    padding: 3.875rem 0 0 0;
+}
+
+.aboutimage {
+    float: left;
+    /*padding-right: 4.375rem;*/
+}
+
+.aboutcopy {
+    max-width: 46%;
+    float: right;
+    /*padding-left: 4.375;*/
+    display: inline-block;
+}
+
+button {
+    margin-top: 3rem;
+    width: 13.75rem;
+    height: 3.125rem;
+    background-color: #ccaa14; 
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+button:hover {
+    background-color: #39464d;
+}
+
+/* ===== PORTFOLIO PAGE ===== */
+
+.mainportfolio {
+    margin: 0 auto;
+    padding: 3.875rem 0 0 0;
+    text-align: center;
+}
+
+.portfolio {
+    -moz-column-width: 18.75em;
+    -webkit-column-width: 18.75em;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em; 
+    margin: 0 auto;
+    width: 100%;
+}
+
+.thumbnail {
+    display: inline-block;
+    padding:  1rem;
+    width:  100%; 
+}
+
+/* ===== GLOBAL ELEMENTS ===== */
+
+.future {
+    text-align: center;
+    padding: 3.75rem 0 0 0;
+}
+
+
+
+
+
+
+
