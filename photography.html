@@ -9,6 +9,7 @@
 <meta name ="author" content ="Gretchen Heuberger">
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/lightbox.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
 </head>
     
@@ -45,12 +46,40 @@
     
     <!-- ===== START MAIN ===== -->
     
-    <main class="photomain" role="main">
+    <main class="mainportfolio" role="main">
         
-      <h1 class="future">Photography coming soon!</h1>
+        <article class="portfolio">
+            
+            <section class="thumbnail">
+                <a href="images/showcase/ocean_storm.jpg" rel="lightbox" ><img class="masonry" src="images/thumbs/ocean_storm_thumb.jpg" alt="Photograph of an ocean storm" width="200" height="133" /></a>
+            </section>
+            
+            
+            <section class="thumbnail">
+                <a href="images/showcase/bow.jpg" rel="lightbox" ><img class="masonry" src="images/thumbs/bow_thumb.jpg" alt="Photograph of the bow of the Cape Henlopen Ferry" width="200" height="133" /></a>
+            </section>
+            
+            <section class="thumbnail">
+                <a href="images/showcase/fire_hose.jpg" rel="lightbox" ><img class="masonry" src="images/thumbs/fire_hose_thumb.jpg" alt="Photograph of a fire hose on the Cape Henlopen Ferry" width="200" height="288" /></a>
+            </section>
+            
+             <section class="thumbnail">
+                <a href="images/showcase/broken_foot.jpg" rel="lightbox" ><img class="masonry" src="images/thumbs/broken_foot_thumb.jpg" alt="Photograph of a broken foot and humorous sticker" width="200" height="133" /></a>
+            </section>
+            
+            <section class="thumbnail">
+                <a href="images/showcase/marmot.jpg" rel="lightbox" ><img class="masonry" src="images/thumbs/marmot_thumb.jpg" alt="Photograph of a marmot in Medicine Bow Wyoming framed against a blue sky" width="200" height="133" /></a>
+            </section>
+            
+            <section class="thumbnail">
+                <a href="images/showcase/rico_nap.jpg" rel="lightbox" ><img class="masonry" src="images/thumbs/rico_nap_thumb.jpg" alt="Photograph of my cat Enrique napping on a note pad" width="200" height="133" /></a>
+            </section>
+        
+        </article>
+        
+    </main>
     
     <!-- end main -->
-    </main>    
 
     <!-- ===== START PAGE FOOTER ===== -->
 
@@ -66,6 +95,8 @@
 
 </div>
 <!-- closes wrapper -->
+    
+    <script src="js/lightbox-plus-jquery.js"></script>
     
 </body>
     

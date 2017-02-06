@@ -1,4 +1,7 @@
 /* ===== MY CSS ===== */
+html {
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -9,12 +12,12 @@ body {
 
 h1 {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.875rem;
+    font-size: 1.875rem; /* 30px */
     text-decoration: none;
 }
 
 p {
-    font-size: 0.875rem;
+    font-size: 0.875rem; /* 14px */
     line-height: 1.75;
     margin: 0 0 1.5rem 0;
 }
@@ -154,7 +157,7 @@ a:hover {
 }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 640px) {
 .navmain {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
@@ -198,8 +201,6 @@ a:hover {
 }
 
 .imagemain {
-    display: block;
-    margin: 0 auto;
     max-width: 100%;
     padding: 3.875rem 0 0 0;
 }
@@ -227,27 +228,31 @@ a:hover {
 
 /* ===== ABOUT PAGE ===== */
 
-.aboutmain {
-    display: inline-block;
-    width: 100%;
-    max-width: 100%;
+.section.two-up {
+    display: flex;
+    flex-direction: column;
     padding: 3.875rem 0 0 0;
 }
 
-.aboutimage {
-    float: left;
-    /*padding-right: 4.375rem;*/
+@media (min-width: 960px) {
+   .section.two-up {
+     flex-direction: row;
+     max-width: 960px;
+     margin: auto;
+  }
 }
 
-.aboutcopy {
-    max-width: 46%;
-    float: right;
-    /*padding-left: 4.375;*/
-    display: inline-block;
+img {
+    max-width: 100%;
+}
+
+.section.two-up .image,
+.section.two-up .article {
+    padding: 20px;
 }
 
 button {
-    margin-top: 3rem;
+    margin: 2rem auto 0 auto;
     width: 13.75rem;
     height: 3.125rem;
     background-color: #ccaa14; 
@@ -255,10 +260,16 @@ button {
     font-size: 1rem;
     border-radius: 0.5rem;
     border: none;
+    text-align: center;
 }
 
 button:hover {
     background-color: #39464d;
+}
+
+.script {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
 }
 
 /* ===== PORTFOLIO PAGE ===== */
@@ -280,9 +291,86 @@ button:hover {
 
 .thumbnail {
     display: inline-block;
-    padding:  1rem;
+    padding: 0 0 4rem 0;
     width:  100%; 
 }
+
+/* ===== RESUME PAGE ===== */
+
+.resume-page {
+    border: 1px solid #39464d;
+    box-shadow: 0px 0px 1px #4d4d4d;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 1em 4em;
+    line-height: 1.75;
+}
+
+.resume-pdf {
+    background-color: rgba(0, 209, 255, 1);
+	box-shadow: 0px 0px 1px #4d4d4d;
+	padding: 0.25rem;
+	border: 1px solid #39464d;
+	text-align: center;
+	font-size: 1rem;
+	color: #fff;
+	letter-spacing: 0.1rem;
+	margin: 3.875rem 0 2rem 0;
+	box-sizing: border-box;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.float-right {
+    float: right;
+}
+
+.two-column {
+    -moz-column-width: 29rem;
+    -webkit-column-width: 29rem;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em; 
+    line-height: 1.25;
+}
+
+.single-space li {
+    padding: 1rem 0 0 0.5rem;
+    list-style-type: disc;
+    margin: 0 3rem 0 3rem;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.75;
+}
+
+.single-space li:last-child {
+    padding: 1rem 0 1.5rem 0.5rem;
+    list-style-type: disc;
+    margin: 0 3rem 0 3rem;
+    font-size: 0.875rem; /* 14px */
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+.resume-header {
+    padding: 0 0 1rem 0;
+}
+
+.resume-edu-space {
+    padding: 0 0 1rem 0;
+}
+
+.italics {
+    font-style: italic; 
+}
+
 
 /* ===== GLOBAL ELEMENTS ===== */
 
