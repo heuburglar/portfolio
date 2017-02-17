@@ -6,7 +6,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
-    color: #39464d;
+    color: #4d4d4d;
     margin: 0 auto;
 }
 
@@ -198,11 +198,11 @@ a:hover {
 .indexmain {
     width: 100%;
     margin: 0 auto;
+    padding: 3.875rem 0 0 0;
 }
 
 .imagemain {
     max-width: 100%;
-    padding: 3.875rem 0 0 0;
 }
 
 .footer {
@@ -217,7 +217,7 @@ a:hover {
     -webkit-flex-flow: row wrap;
     justify-content: center;
     
-    border-top: 1px solid #4d4d4d;
+    border-top: 1px solid #dadada;
     width: 100%;
     margin-top: 3.75rem;
     margin-bottom: 1rem;
@@ -370,6 +370,141 @@ h3 {
 .italics {
     font-style: italic; 
 }
+
+/* ===== WEBSITE PAGE ===== */
+
+.websites-col {
+    -moz-column-width: 25rem;
+    -webkit-column-width: 25rem;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em; 
+    margin: 0 auto;
+    width: 100%;
+}
+
+.website-sec {
+    display: inline-block;
+    padding: 0 0 4rem 0;
+    width:  100%; 
+}
+
+/* ===== WEBSITE PRESENTATION PAGES ===== */
+
+/*.three-column {
+    -moz-column-width: 18.75em;
+    -webkit-column-width: 18.75em;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em; 
+    margin: 0 auto;
+    width: 100%;
+}*/
+
+/*.three-column:first-child {
+    -webkit-column-span: 2;
+    column-span: 2;
+}*/
+
+.add-margin {
+    padding: 3.875rem 0 0 0;
+}
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding-right: 2rem;
+}
+
+.col-one {
+    width: 42%;
+    padding-right: 2rem;
+}
+
+.col-two {
+    width: 22%;
+}
+
+.col-two p {
+    margin: 0;
+}
+
+.col-three {
+    width: 22%;
+}
+
+.three-column h3 {
+    padding: 0 0 1.25rem 0;
+    margin: 0 0 1.75rem 0;
+    border-bottom: 1px solid #dadada;
+}
+
+.banner-one {
+    
+}
+
+.banner-two {
+    
+}
+
+.nopad {
+    margin: 0;
+    font-size: 0.625rem;
+}
+
+/* ===== CONTACT PAGE ===== */
+
+input[type=text] {
+    width: 100%;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=email] {
+    width: 100%;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    width: 100%;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #39464d;
+    color: #ffffff;
+}
+
+input[type=submit]:hover {
+    background-color: #01d1ff;
+}
+
+/* ===== SITEMAP ===== */
+
+.indent {
+    padding-left: 2.5rem;
+}
+
+.indent-two {
+    padding-left: 5rem;
+}
+
 
 
 /* ===== GLOBAL ELEMENTS ===== */
