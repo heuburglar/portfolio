@@ -30,7 +30,7 @@ p {
 .masthead {
     display: block;
     text-align: center;
-    padding: 1.875rem 0 1.25rem 0;
+    padding: 3rem 0 1.25rem 0;
     /* border-bottom: 1px solid #4d4d4d; */
 }
 
@@ -147,7 +147,7 @@ a:hover {
 
 /* ===== MEDIA QUERIES ===== */
 
-@media all and (max-width: 800px) {
+/*@media all and (max-width: 800px) {
 .navmain {
     justify-content: space-around;
 }
@@ -155,7 +155,7 @@ a:hover {
 .footer {
     justify-content: space-around; 
 }
-}
+}*/
 
 @media all and (max-width: 640px) {
 .navmain {
