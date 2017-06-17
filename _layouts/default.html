@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-<title>Gretchen Heuberger</title>
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta charset="UTF-8">
 <meta name="keywords" content="digital marketing professional, web design">
-<meta name ="description" content ="Gretchen Heuberger is a freelance digital designer and marketing professional">
+<meta name ="description" content ="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<base href="{{ site.url }}">
 <meta name ="author" content ="Gretchen Heuberger">
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
