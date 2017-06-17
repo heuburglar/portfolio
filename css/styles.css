@@ -1,6 +1,7 @@
 /* ===== MY CSS ===== */
 html {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -62,7 +63,7 @@ p {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-  
+
     -webkit-flex-flow: row wrap;
     justify-content: center;
 }
@@ -153,7 +154,7 @@ a:hover {
 }
 
 .footer {
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 }*/
 
@@ -164,7 +165,7 @@ a:hover {
     padding: 0;
     text-align: center;
   }
-    
+
 .navmain li {
     display: inline-block;
     margin-left: 0;
@@ -173,19 +174,19 @@ a:hover {
     text-align: center;
     margin: 0.25rem 0 0.25rem 0;
     }
-    
+
 .footer {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
-    padding: 1rem; 
+    padding: 1rem;
     text-align: center;
     }
-    
-.navmain a { 
-    text-align: center; 
+
+.navmain a {
+    text-align: center;
     padding: 10px;
-    border-top: 1px solid rgba(255,255,255,0.3); 
-    border-bottom: 1px solid rgba(0,0,0,0.1); 
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
   }
 
 .navmain li:last-of-type a {
@@ -213,10 +214,10 @@ a:hover {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-  
+
     -webkit-flex-flow: row wrap;
     justify-content: center;
-    
+
     border-top: 1px solid #dadada;
     width: 100%;
     margin-top: 3.75rem;
@@ -253,18 +254,30 @@ img {
 
 button {
     margin: 2rem auto 0 auto;
-    width: 13.75rem;
-    height: 3.125rem;
-    background-color: #ccaa14; 
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    /* width: 13.75rem;
+    height: 3.125rem; */
+    background-color: #39464d;
     color: #fff;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    border: none;
+    font-size: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     text-align: center;
 }
 
 button:hover {
-    background-color: #39464d;
+    background-color: rgba(0, 209, 255, 1);
+    color: #fff;
+}
+
+button a {
+  color: #fff;
+}
+
+button a:hover {
+  color: #fff;
 }
 
 .script {
@@ -284,7 +297,7 @@ button:hover {
     -moz-column-width: 18.75em;
     -webkit-column-width: 18.75em;
     -moz-column-gap: 1em;
-    -webkit-column-gap: 1em; 
+    -webkit-column-gap: 1em;
     margin: 0 auto;
     width: 100%;
 }
@@ -292,7 +305,7 @@ button:hover {
 .thumbnail {
     display: inline-block;
     padding: 0 0 4rem 0;
-    width:  100%; 
+    width:  100%;
 }
 
 /* ===== RESUME PAGE ===== */
@@ -331,7 +344,7 @@ button:hover {
     -moz-column-width: 29rem;
     -webkit-column-width: 29rem;
     -moz-column-gap: 1em;
-    -webkit-column-gap: 1em; 
+    -webkit-column-gap: 1em;
     line-height: 1.25;
 }
 
@@ -368,7 +381,7 @@ h3 {
 }
 
 .italics {
-    font-style: italic; 
+    font-style: italic;
 }
 
 /* ===== WEBSITE PAGE ===== */
@@ -377,7 +390,7 @@ h3 {
     -moz-column-width: 25rem;
     -webkit-column-width: 25rem;
     -moz-column-gap: 1em;
-    -webkit-column-gap: 1em; 
+    -webkit-column-gap: 1em;
     margin: 0 auto;
     width: 100%;
 }
@@ -385,7 +398,7 @@ h3 {
 .website-sec {
     display: inline-block;
     padding: 0 0 4rem 0;
-    width:  100%; 
+    width:  100%;
 }
 
 /* ===== WEBSITE PRESENTATION PAGES ===== */
@@ -394,7 +407,7 @@ h3 {
     -moz-column-width: 18.75em;
     -webkit-column-width: 18.75em;
     -moz-column-gap: 1em;
-    -webkit-column-gap: 1em; 
+    -webkit-column-gap: 1em;
     margin: 0 auto;
     width: 100%;
 }*/
@@ -439,11 +452,11 @@ h3 {
 }
 
 .banner-one {
-    
+
 }
 
 .banner-two {
-    
+
 }
 
 .nopad {
@@ -453,8 +466,13 @@ h3 {
 
 /* ===== CONTACT PAGE ===== */
 
+form {
+  padding: 20px;
+  margin: 0 auto;
+}
+
 input[type=text] {
-    width: 100%;
+    width: 95%;
     display: inline-block;
     padding: 12px 20px;
     margin: 8px 0;
@@ -463,7 +481,7 @@ input[type=text] {
 }
 
 input[type=email] {
-    width: 100%;
+    width: 95%;
     display: inline-block;
     padding: 12px 20px;
     margin: 8px 0;
@@ -472,7 +490,7 @@ input[type=email] {
 }
 
 textarea {
-    width: 100%;
+    width: 95%;
     display: inline-block;
     padding: 12px 20px;
     margin: 8px 0;
@@ -481,7 +499,7 @@ textarea {
 }
 
 input[type=submit] {
-    width: 100%;
+    width: 95%;
     display: inline-block;
     padding: 12px 20px;
     margin: 8px 0;
@@ -513,10 +531,3 @@ input[type=submit]:hover {
     text-align: center;
     padding: 3.75rem 0 0 0;
 }
-
-
-
-
-
-
-
