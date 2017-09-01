@@ -139,11 +139,27 @@ a:hover {
 }
 
 .navmain .currentpage {
-    color: #01d1ff
+    color: #01d1ff;
+}
+
+.currentpage {
+    color: #01d1ff;
 }
 
 .navmain .currentpage:hover {
     color: #01d1ff;
+}
+
+.active {
+  color: #01d1ff;
+}
+
+.divide {
+  border-top: 1px solid #dadada;
+  width: 100%;
+  margin-top: 3.75rem;
+  margin-bottom: 1rem;
+  padding: 1.875rem 0 1.875rem 0;
 }
 
 /* ===== MEDIA QUERIES ===== */
@@ -387,8 +403,8 @@ h3 {
 /* ===== WEBSITE PAGE ===== */
 
 .websites-col {
-    -moz-column-width: 25rem;
-    -webkit-column-width: 25rem;
+    -moz-column-width: 25rem; /*25rem*/
+    -webkit-column-width: 25rem; /*25rem*/
     -moz-column-gap: 1em;
     -webkit-column-gap: 1em;
     margin: 0 auto;
