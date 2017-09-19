@@ -138,6 +138,11 @@ a:hover {
     color: #01d1ff;
 }
 
+.brightlink {
+    text-decoration: none;
+    color: #01d1ff;
+}
+
 .navmain .currentpage {
     color: #01d1ff;
 }
@@ -455,6 +460,18 @@ h3 {
 
 .col-two p {
     margin: 0;
+}
+
+.col-two-copy {
+    width: 22%;
+}
+
+.col-two-copy p {
+    margin: 0 0 1.5rem 0;
+}
+
+.reduced-margin p {
+    margin: 0 0 0.75rem 0;
 }
 
 .col-three {
