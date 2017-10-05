@@ -7,7 +7,8 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
-    color: #4d4d4d;
+    /* color: #4d4d4d; */
+    color: #39464d;
     margin: 0 auto;
 }
 
@@ -52,10 +53,10 @@ p {
 }
 
 .name a:hover {
-    color: #39464d;
+    color: #01d1ff;
 }
 
-.navmain {
+ .navmain {
     list-style-type: none;
     margin: 0
     display: -webkit-box;
@@ -135,13 +136,18 @@ a {
 }
 
 a:hover {
-    color: #01d1ff;
+    color: #39464d;
 }
 
 .brightlink {
     text-decoration: none;
     color: #01d1ff;
 }
+
+.footer a:hover {
+  color: #01d1ff;
+}
+
 
 .navmain .currentpage {
     color: #01d1ff;
@@ -160,7 +166,8 @@ a:hover {
 }
 
 .divide {
-  border-top: 1px solid #dadada;
+  /* border-top: 1px solid #dadada; */
+  border-top: 1px solid #c2c3c6;
   width: 100%;
   margin-top: 3.75rem;
   margin-bottom: 1rem;
@@ -221,6 +228,7 @@ a:hover {
     width: 100%;
     margin: 0 auto;
     padding: 3.875rem 0 0 0;
+    text-align: center;
 }
 
 .imagemain {
@@ -239,7 +247,7 @@ a:hover {
     -webkit-flex-flow: row wrap;
     justify-content: center;
 
-    border-top: 1px solid #dadada;
+    border-top: 1px solid #cecfd2;
     width: 100%;
     margin-top: 3.75rem;
     margin-bottom: 1rem;
@@ -310,8 +318,8 @@ button a:hover {
 
 .mainportfolio {
     margin: 0 auto;
-    padding: 3.875rem 0 0 0;
-    text-align: center;
+    padding: 3.25rem 0 0 0;
+    width: 100%;
 }
 
 .portfolio {
@@ -391,6 +399,11 @@ h2 {
 
 h3 {
     font-weight: 600;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 .resume-header {
@@ -481,15 +494,7 @@ h3 {
 .three-column h3 {
     padding: 0 0 1.25rem 0;
     margin: 0 0 1.75rem 0;
-    border-bottom: 1px solid #dadada;
-}
-
-.banner-one {
-
-}
-
-.banner-two {
-
+    border-bottom: 1px solid #cecfd2;
 }
 
 .nopad {
@@ -563,4 +568,29 @@ input[type=submit]:hover {
 .future {
     text-align: center;
     padding: 3.75rem 0 0 0;
+}
+
+/* ===== WRITING ===== */
+
+.web {
+  background-color: #01d1ff;
+  width: 12.5rem;
+}
+
+.graphic {
+  background-color: #39464d;
+  width: 12.5rem;
+}
+
+.writing {
+  background-color: #01d1ff;
+  width: 12.5rem;
+}
+
+.workthumb {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
 }
